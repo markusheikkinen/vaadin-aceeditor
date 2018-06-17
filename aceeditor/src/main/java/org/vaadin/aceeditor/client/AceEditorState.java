@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.vaadin.aceeditor.client.TransportDoc.TransportRange;
 
-import com.vaadin.shared.AbstractFieldState;
+import com.vaadin.v7.shared.AbstractFieldState;
 
 @SuppressWarnings("serial")
 public class AceEditorState extends AbstractFieldState {
