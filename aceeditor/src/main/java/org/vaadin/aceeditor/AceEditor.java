@@ -26,16 +26,16 @@ import com.vaadin.annotations.JavaScript;
 import com.vaadin.annotations.StyleSheet;
 import com.vaadin.event.FieldEvents.BlurEvent;
 import com.vaadin.event.FieldEvents.BlurListener;
-import com.vaadin.event.FieldEvents.BlurNotifier;
+import com.vaadin.v7.event.FieldEvents.BlurNotifier;
 import com.vaadin.event.FieldEvents.FocusEvent;
 import com.vaadin.event.FieldEvents.FocusListener;
-import com.vaadin.event.FieldEvents.FocusNotifier;
-import com.vaadin.event.FieldEvents.TextChangeEvent;
-import com.vaadin.event.FieldEvents.TextChangeListener;
-import com.vaadin.event.FieldEvents.TextChangeNotifier;
-import com.vaadin.ui.AbstractField;
-import com.vaadin.ui.AbstractTextField;
-import com.vaadin.ui.AbstractTextField.TextChangeEventMode;
+import com.vaadin.v7.event.FieldEvents.FocusNotifier;
+import com.vaadin.v7.event.FieldEvents.TextChangeEvent;
+import com.vaadin.v7.event.FieldEvents.TextChangeListener;
+import com.vaadin.v7.event.FieldEvents.TextChangeNotifier;
+import com.vaadin.v7.ui.AbstractField;
+import com.vaadin.v7.ui.AbstractTextField;
+import com.vaadin.v7.ui.AbstractTextField.TextChangeEventMode;
 import com.vaadin.util.ReflectTools;
 
 /**
@@ -190,24 +190,6 @@ public class AceEditor extends AbstractField<String> implements BlurNotifier,
 		getState().listenToFocusChanges = true;
 	}
 
-	@Override
-	@Deprecated
-	public void addListener(BlurListener listener) {
-		addBlurListener(listener);
-	}
-
-	@Override
-	@Deprecated
-	public void addListener(FocusListener listener) {
-		addFocusListener(listener);
-	}
-
-	@Override
-	@Deprecated
-	public void addListener(TextChangeListener listener) {
-		addTextChangeListener(listener);
-	}
-
 	/**
 	 * Adds an ace marker. The id of the marker must be unique within this
 	 * editor.
@@ -350,24 +332,6 @@ public class AceEditor extends AbstractField<String> implements BlurNotifier,
 		removeListener(BlurEvent.EVENT_ID, BlurEvent.class, listener);
 		getState().listenToFocusChanges = !getListeners(FocusEvent.class)
 				.isEmpty() || !getListeners(BlurEvent.class).isEmpty();
-	}
-
-	@Override
-	@Deprecated
-	public void removeListener(BlurListener listener) {
-		removeBlurListener(listener);
-	}
-
-	@Override
-	@Deprecated
-	public void removeListener(FocusListener listener) {
-		removeFocusListener(listener);
-	}
-
-	@Override
-	@Deprecated
-	public void removeListener(TextChangeListener listener) {
-		removeTextChangeListener(listener);
 	}
 
 	public void removeMarker(AceMarker marker) {

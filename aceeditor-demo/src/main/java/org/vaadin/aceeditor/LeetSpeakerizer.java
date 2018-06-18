@@ -1,7 +1,7 @@
 package org.vaadin.aceeditor;
 
-import com.vaadin.event.FieldEvents.TextChangeEvent;
-import com.vaadin.event.FieldEvents.TextChangeListener;
+import com.vaadin.v7.event.FieldEvents.TextChangeEvent;
+import com.vaadin.v7.event.FieldEvents.TextChangeListener;
 
 @SuppressWarnings("serial")
 public class LeetSpeakerizer implements TextChangeListener {
