@@ -5,6 +5,7 @@
 	<artifactId>aceeditor-vaadin8-compatibility</artifactId>
 	<packaging>jar</packaging>
 	<name>AceEditor</name>
+	<version>0.8.15.1</version>
 	<parent>
 		<groupId>org.vaadin.addons</groupId>
 		<artifactId>aceeditor-vaadin8-compatibility-parent</artifactId>
@@ -75,7 +76,7 @@
 						</manifest>
 						<manifestEntries>
 							<Vaadin-Package-Version>1</Vaadin-Package-Version>
-							<Vaadin-Widgetsets>org.vaadin.aceeditor.AceEditorWidgetSet</Vaadin-Widgetsets>
+							<Vaadin-Widgetsets>org.vaadin.aceeditor.v7.AceEditorWidgetSet</Vaadin-Widgetsets>
 						</manifestEntries>
 					</archive>
 				</configuration>
