@@ -3,9 +3,10 @@ package org.vaadin.aceeditor;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.vaadin.aceeditor.client.AceAnnotation;
-import org.vaadin.aceeditor.client.AceMarker;
-import org.vaadin.aceeditor.client.AceRange;
+import org.vaadin.aceeditor.v7.AceEditor;
+import org.vaadin.aceeditor.v7.client.AceAnnotation;
+import org.vaadin.aceeditor.v7.client.AceMarker;
+import org.vaadin.aceeditor.v7.client.AceRange;
 
 import com.vaadin.v7.event.FieldEvents.TextChangeEvent;
 import com.vaadin.v7.event.FieldEvents.TextChangeListener;

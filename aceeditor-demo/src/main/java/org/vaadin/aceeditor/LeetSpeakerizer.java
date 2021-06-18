@@ -1,5 +1,7 @@
 package org.vaadin.aceeditor;
 
+import org.vaadin.aceeditor.v7.AceEditor;
+
 import com.vaadin.v7.event.FieldEvents.TextChangeEvent;
 import com.vaadin.v7.event.FieldEvents.TextChangeListener;
 

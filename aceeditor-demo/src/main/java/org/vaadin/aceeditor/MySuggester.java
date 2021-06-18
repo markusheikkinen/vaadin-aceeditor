@@ -2,6 +2,9 @@ package org.vaadin.aceeditor;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.vaadin.aceeditor.v7.Suggester;
+import org.vaadin.aceeditor.v7.Suggestion;
+
 
 
 public class MySuggester implements Suggester {

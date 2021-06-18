@@ -1,17 +1,19 @@
 package org.vaadin.aceeditor;
 
-import org.vaadin.aceeditor.AceEditor.SelectionChangeEvent;
-import org.vaadin.aceeditor.AceEditor.SelectionChangeListener;
-import org.vaadin.aceeditor.client.AceAnnotation;
-import org.vaadin.aceeditor.client.AceDoc;
-import org.vaadin.aceeditor.client.AceMarker;
-import org.vaadin.aceeditor.client.AceMarker.OnTextChange;
+import org.vaadin.aceeditor.v7.AceEditor;
+import org.vaadin.aceeditor.v7.AceEditor.SelectionChangeEvent;
+import org.vaadin.aceeditor.v7.AceEditor.SelectionChangeListener;
+import org.vaadin.aceeditor.v7.AceMode;
+import org.vaadin.aceeditor.v7.AceTheme;
+import org.vaadin.aceeditor.v7.SuggestionExtension;
+import org.vaadin.aceeditor.v7.TextRange;
+import org.vaadin.aceeditor.v7.client.AceAnnotation;
+import org.vaadin.aceeditor.v7.client.AceMarker;
+import org.vaadin.aceeditor.v7.client.AceMarker.OnTextChange;
 
 import com.vaadin.annotations.PreserveOnRefresh;
 import com.vaadin.annotations.StyleSheet;
 import com.vaadin.annotations.Theme;
-import com.vaadin.v7.data.Property.ValueChangeEvent;
-import com.vaadin.v7.data.Property.ValueChangeListener;
 import com.vaadin.event.FieldEvents.BlurEvent;
 import com.vaadin.event.FieldEvents.BlurListener;
 import com.vaadin.event.FieldEvents.FocusEvent;
@@ -22,20 +24,22 @@ import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
-import com.vaadin.v7.ui.CheckBox;
 import com.vaadin.ui.Component;
-import com.vaadin.v7.ui.HorizontalLayout;
 import com.vaadin.ui.HorizontalSplitPanel;
-import com.vaadin.v7.ui.Label;
 import com.vaadin.ui.Link;
-import com.vaadin.v7.ui.NativeSelect;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.Panel;
+import com.vaadin.ui.UI;
+import com.vaadin.ui.Window;
+import com.vaadin.v7.data.Property.ValueChangeEvent;
+import com.vaadin.v7.data.Property.ValueChangeListener;
+import com.vaadin.v7.ui.CheckBox;
+import com.vaadin.v7.ui.HorizontalLayout;
+import com.vaadin.v7.ui.Label;
+import com.vaadin.v7.ui.NativeSelect;
 import com.vaadin.v7.ui.TextArea;
 import com.vaadin.v7.ui.TextField;
-import com.vaadin.ui.UI;
 import com.vaadin.v7.ui.VerticalLayout;
-import com.vaadin.ui.Window;
 
 
 @Theme("reindeer")
